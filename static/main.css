@@ -1,0 +1,123 @@
+body{
+	margin: 0;
+}
+
+
+.container{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 300px auto;
+	grid-template-rows: 50px auto;
+	grid-template-areas: 
+						"head head" 
+						"sb cb"
+}
+
+.header{
+	grid-area: head;
+	background-color: #a1cfd4;
+}
+
+.sidebar{
+	grid-area: sb;
+	background-color: #ebeb83;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-box{
+	grid-area: cb;
+	background-color: #7894c2;
+}
+
+.add-agenda{
+	position: absolute;
+	align-self: flex-end;
+	margin-top: 40%;
+
+}
+
+ul.agendas{
+	margin-top: 0em;
+	list-style: none;
+}
+.agenda{
+	margin: 0.5em 0;
+	width: 80%;
+	padding: 0.8em 0.8em;
+	background-color: #45b03f;
+	text-align: center;
+	border-radius: 15px;
+}
+.agenda:hover{
+	background-color: #84d47f;
+}
+.agenda.active{
+	background-color: #197524;
+
+}
+
+.time{
+	float: right;
+	margin: 1em 0.3em;
+}
+#ex1{
+	padding: 0.5em;
+}
+.agenda-name{
+	width: 55%;
+}
+.agenda-form button{
+	float: right;
+	margin-right: 10px;
+	width: 20%;
+}
+
+.content{
+	padding: 1em;
+	background-color: #ebebe8 ;
+	margin: 1em;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	position: relative;	
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+
+}
+
+a.add-task{
+	font-weight: bold;
+	margin: 0.5em 0;
+	width: 10%;
+	padding: 0.8em 0.8em;
+	background-color: #45b03f;
+	text-align: center;
+	border-radius: 15px;
+	text-decoration: none;
+	position: absolute;
+	right: 1.5em;
+	bottom: 1.5em;
+}
+
+.task{
+	width: 10em;
+	height: 12em;
+	background-color: #a4bbe0;
+	padding: 0.3em;
+	border-radius: 10px;
+	box-shadow: 5px 8px #888888;
+	margin-left: 1em;
+	margin: 1em;
+
+
+}
+.task p{
+	height: 50%;
+}
+
+.hide{
+	display: none;
+}
+

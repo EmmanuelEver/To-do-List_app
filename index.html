@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TDL</title>
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="header">
+			<span class="time"></span>
+		</header>
+
+
+		<div class="sidebar">
+			<h1>Agendas</h1>
+			<ul class="agendas">
+				<li class="agenda" rel="basketball"> Basketball </li>
+				<li class="agenda" rel="study"> Study </li>
+
+			</ul>
+
+			<!-- 		this is the modal for add agenda -->	
+
+					<div id="ex1" class="modal">
+						<form class="agenda-form">
+							  <label>Agenda name: </label>
+							  <input type="text" name="agenda-name" class="agenda-name"> 
+							  <input type="submit" class="submit-agenda" name="submit" value="Create">
+					    </form>
+					</div>
+
+					<a href="#ex1" rel="modal:open" class="add add-agenda"><img src="images/add-icon.png"></a>
+		</div>
+
+
+		<div id="container-box" class="container-box">
+			
+			<div id="basketball" class="content basketball hide">
+					<div class="task">
+						<h3>Task Name</h3>
+						<p>Practice dribbling skills</p>
+						<h5>Time: </h5>
+					</div>
+
+					<div class="task">
+						<h3>Task Name</h3>
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+					<div class="task">
+						<h3>Task Name</h3>
+
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+					<div class="task">
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+					<div class="task">
+						<h3>Task Name</h3>
+
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+					<div class="task">
+						<h3>Task Name</h3>
+
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+					<div class="task">
+						<h3>Task Name</h3>
+						<p>Practice dribbling skills</p>
+						<h5>Time: <span class="task-time"></span> </h5>
+					</div>
+			<a href="#task-modal" rel="modal:open" class="add add-task hide">Add Task</a>
+
+			</div>
+
+			<div id="study" class="content study hide">
+					<div class="task">
+						<h3>Task  Name</h3>
+						<p>Study dribbling skills</p>
+						<h5>Time: </h5>
+					</div>
+
+			<a href="#task-modal" rel="modal:open" class="add add-task hide">Add Task</a>
+
+
+			</div>
+
+			<!-- Modal for adding task -->
+			<div id="task-modal" class="modal">
+						<form class="task-form">
+							 <p> 
+							  <label>Task name: </label>
+							  <input type="text" name="task-name" class="task-name">
+							 </p>
+							  <label>Task Description</label>
+							  <textarea name="task-description" class="task-description" rows="15" cols="30"></textarea>
+							 <p>
+							  <label>Time: </label>
+							  <input type="datetime-local" name="task-due" class="task-due">
+							 </p>
+							  <input type="submit" class="submit-task" name="submit" value="Create">
+					    </form>
+					</div>
+			<!-- toggle Modal for adding task -->			
+		</div>
+
+		
+
+
+
+	</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<script type="text/javascript" src="static/main.js"></script>
+</body>
+</html>
